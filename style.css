@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 a { 
@@ -11,15 +12,17 @@ a {
 
 .img-logo {
   width: 200px;
+  
 }
 
 .header-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: auto;  
+  max-width: 100%; 
   background-color: rgb(20, 20, 20) ;
   padding: 20px;
-  max-height: 120px;
+  min-height: 120px;
 }
 
 .header-logo {
@@ -28,7 +31,7 @@ a {
 }
 
 .header-menu {  
-  display: flex;
+  display: flex;  
   padding: 20px;
   margin-right: 200px;  
   gap: 50px;
@@ -51,9 +54,14 @@ a {
   
 }
 
+.img-right-girl {
+  
+}
+
 .about-container {
-  display: flex;
+  display: flex;  
   height: auto;
+  background-color: black;
 }
 
  strong {
@@ -135,8 +143,8 @@ strong:hover {
 
 
 
-.right-content {
-  height: 671px;
+.right-content {    
+    background-color: black;  
 }
 
 h5 {
@@ -225,6 +233,7 @@ h1 {
 
 .tiles-icon {
   width: 80px;
+  height: 80px;
 }
 
 .services-text {
@@ -364,7 +373,7 @@ h1 {
 }
 
 .parallax-bg {
-  background-image: url('/assets/parallax_bg.fw.png');
+  background-image: url('./assets/parallax_bg.fw.png');
   background-position: center; /* Centralizar a imagem de fundo */
   background-repeat: no-repeat; /* repetir a imagem de fundo */
   background-size:100%; /* Cobrir todo o tamanho da seção */
@@ -500,6 +509,7 @@ gap: 20px;
 
 .img-contact-topics {
   width: 70px;
+  height: 70px;
 }
 
 .textarea {
@@ -564,3 +574,237 @@ gap: 20px;
   width: 40px;
   margin: 40px 20px 40px 20px;
 }
+
+@media screen and (max-width: 1450px) {
+ 
+  h1 {
+      font-size: 50px;
+  }
+
+  .header-logo {
+    margin-left: 0px;
+  }
+
+  .header-menu {
+    margin-right: 0px;
+  }
+  
+  .left-content {
+    padding-left: 20px;
+    padding-top: 40px;
+    max-width: 80%;
+  }
+
+  .right-content {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img-right-girl {
+    width: 400px;
+    height: auto;
+  }
+
+  .services-container {
+    padding: 80px 20px 80px 20px;
+  }
+
+  .creative-container {
+    padding: 80px 20px 0px 20px;  
+
+  }
+
+  .parallax {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .cases-container {
+    padding: 80px 20px 80px 20px;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cases {
+    padding-bottom: 40px;
+    width: auto;
+  }
+
+  .creative-text h1 {
+    font-size: 50px;
+  }
+
+  .email-container {
+    max-width: 550px;
+  }
+
+  .input-contact {
+    width: 468px;
+    height: 50px;    
+  }
+
+  .textarea {
+    width: 468px;
+  }
+
+  .send {
+    width: 468px;
+  }
+
+  
+
+  
+}
+
+@media screen and (max-width: 1015px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-left-girl {
+    display: none;
+  }
+
+    .play_btn {
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+  .button-left {
+    gap: 5px;
+  }
+
+  .left-content {
+    padding: 10px;
+  }
+
+  .services-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .creative-container {
+    padding: 40px 20px 0px 20px;
+    
+  }
+
+  .parallax-bg {    
+    height: 800px; /* Altura igual à seção */       
+    top: -1000px; /* Alinhar a imagem de fundo ao topo */
+    background-color: black;
+      
+    
+  }
+
+  .img-left-girl {
+    max-width: 300px;    
+    
+  }
+
+  .creative-text h1 {
+    font-size: 40px;
+  }
+
+  .parallax-content {
+    align-items: center;
+  }
+
+  .contact-text {
+    padding: 40px;
+    
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    background-image: url(./assets/contact_bg.fw.png);    
+    background-size:450%;
+    height: 800px; 
+    padding: 40px;
+     
+  }
+
+  #contact-us {
+    height: auto;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+ 
+}
+
+
+@media screen and (max-width: 605px) {
+  .img-right-girl {
+    display: none;
+  }
+
+  .about-container {
+    justify-content: center;
+  }
+
+  .services-tiles-left {
+    margin-bottom: 0px;
+  }
+  .services-tiles-right {
+    margin-top: 0px;
+  }
+
+  .services-container {
+    gap: 0px;
+    min-height: 1500px;
+  }
+
+  .button-default {   
+    align-self: center;
+  }
+
+  .parallax-bg {    
+    height: 800px; /* Altura igual à seção */       
+    top: -1300px; /* Alinhar a imagem de fundo ao topo */
+    
+  }
+
+  .cases-container {
+    padding: 20px;
+  }
+
+  #portfolio {
+    height:1200px;
+  }
+
+  .img-cases {
+    width: 200px;
+    height: auto;
+  }
+
+  .email-container {
+    margin-right: 0;
+    
+  }
+
+  .img-logo-footer {
+    width: 200px;
+    height: auto;
+  }
+
+  .footer-menu {
+    padding: 5px;
+    gap: 20px;
+  }
+}
+
+
+

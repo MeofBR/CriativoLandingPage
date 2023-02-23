@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
   <title>LandingPage | Criativo</title>
@@ -16,7 +16,7 @@
 <body> 
   <section class="header-content">
     <div class="header-logo">
-      <a href="./index.html"><img src="/assets/logo.fw.png" alt="Logo - Criativo" class="img-logo"></a>
+      <a href="./index.html"><img src="./assets/logo.fw.png" alt="Logo - Criativo" class="img-logo"></a>
     </div>
     <div class="header-menu">
       <a href="./index.html"><p class="link-menu">Home</p></a>
@@ -42,7 +42,7 @@
         <br>  
       <div class="button-container">
         <div class="button-right">
-          <img src="assets/play_button.fw.png" alt="Play" class="play_btn animation">
+          <img src="./assets/play_button.fw.png" alt="Play" class="play_btn animation">
         </div>           
         <div class="button-left">
           <p class="animation-container-showup">ABOUT US</p>
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="right-content">
-      <img src="/assets/girl2.fw.png" alt="Girl" class="img-right-girl">
+      <img src="./assets/girl2.fw.png" alt="Girl" class="img-right-girl">
     </div>    
   </section>
   <section class="services-container" id="our-services">
@@ -69,24 +69,24 @@
     </div>
     <div class="services-tiles-left">
       <div class="services-tiles-left tile gradient">
-        <img src="assets/icon1.fw.png" alt="Icon 1" class="tiles-icon">
+        <img src="./assets/icon1.fw.png" alt="Icon 1" class="tiles-icon">
         <h4>Brand Identity</h4>
         <p class="tile-description">We bring the right people together to challenge</p>
       </div>
       <div class="services-tiles-left tile ">
-        <img src="assets/icon2.fw.png" alt="Icon 2" class="tiles-icon">
+        <img src="./assets/icon2.fw.png" alt="Icon 2" class="tiles-icon">
         <h4>UI & UX Design</h4>
         <p class="tile-description">We bring the right people together to challenge</p>
       </div>
     </div>
     <div class="services-tiles-right">
       <div class="services-tiles-left tile gradient">
-        <img src="assets/icon3.fw.png" alt="Icon 3" class="tiles-icon">
+        <img src="./assets/icon3.fw.png" alt="Icon 3" class="tiles-icon">
         <h4>Website Design</h4>
         <p class="tile-description">We bring the right people together to challenge</p>
       </div>
       <div class="services-tiles-left tile">
-        <img src="assets/icon4.fw.png" alt="Icon 4" class="tiles-icon">
+        <img src="./assets/icon4.fw.png" alt="Icon 4" class="tiles-icon">
         <h4>UI & UX Design</h4>
         <p class="tile-description">We bring the right people together to challenge</p>
       </div>
@@ -94,7 +94,7 @@
   </section>
   <section class="creative-container"  id="about-us">
     <div>      
-      <img src="assets/girl.fw.png" alt="Girl 2">
+      <img src="./assets/girl.fw.png" alt="Girl 2" class="img-left-girl">
     </div>
     <div>
       <div class="creative-text">
@@ -106,12 +106,12 @@
         voluptates rerum provident, quae dolores rem eum!</p>
       </div>
       <div class="creative-topics">
-        <img src="assets/icon5.fw.png" alt="Icon 5" class="tiles-icon">
+        <img src="./assets/icon5.fw.png" alt="Icon 5" class="tiles-icon">
         <div>
           <h4>Clean Code</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
-        <img src="assets/icon6.fw.png" alt="Icon 6" class="tiles-icon">
+        <img src="./assets/icon6.fw.png" alt="Icon 6" class="tiles-icon">
         <div>
           <h4>Modern Design</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -124,22 +124,22 @@
       <div class="parallax-bg"></div>
       <div class="parallax-content"> 
         <div class="parallax-tile">
-          <img src="assets/icon7.fw.png" alt="Icon 7" class="icon-paralax">
+          <img src="./assets/icon7.fw.png" alt="Icon 7" class="icon-paralax">
           <h1>150<strong>+</strong></h1>        
           <p>Projects Done</p>
         </div>
         <div class="parallax-tile">
-          <img src="assets/icon8.fw.png" alt="Icon 7" class="icon-paralax">
+          <img src="./assets/icon8.fw.png" alt="Icon 7" class="icon-paralax">
           <h1>75<strong>+</strong></h1>        
           <p>Happy Customer</p>            
         </div>
         <div class="parallax-tile">
-          <img src="assets/icon9.fw.png" alt="Icon 7" class="icon-paralax">
+          <img src="./assets/icon9.fw.png" alt="Icon 7" class="icon-paralax">
           <h1>20<strong>+</strong></h1>        
           <p>Award Winning</p>
         </div>
         <div class="parallax-tile">
-          <img src="assets/icon10.fw.png" alt="Icon 7" class="icon-paralax">
+          <img src="./assets/icon10.fw.png" alt="Icon 7" class="icon-paralax">
           <h1>45<strong>+</strong></h1>        
           <p>Team Members</p>            
         </div>        
@@ -163,12 +163,9 @@
             <img src="./assets/topic_marker.fw.png" alt="Topic" class="topic-icon">
             <p class="topics">Proin est magna, semper a porta sed, lacinia eu lectus. Ut volutpat commodo.</p>
           </div>          
-    </div>
-    <div class="img-cases-container">     
+    </div>    
+    <div>
       <img src="./assets/cases/case1.fw.png" alt="Case 1" class="img-cases">
-      <div class="image-overlay">
-        <p>TEXTO AQUI TESTE</p>
-      </div>
     </div>
     <div>
       <img src="./assets/cases/case2.fw.png" alt="Case 2" class="img-cases">
@@ -195,7 +192,7 @@
           <input type="submit" value="SEND MESSAGE" class="send">
         </form>
       </div>
-      <div class="creative-text">        
+      <div class="creative-text contact-text">        
         <h5>CONTACT</h5>
         <h1>Get In <strong>Touch</strong>.</h1>
         <p class="spacer"></p>
@@ -204,21 +201,21 @@
           voluptates rerum provident, quae dolores rem eum!</p>        
           <div class="creative-topics contact-text-container">
             <div class="contact-topics">
-              <img src="assets/contact/icon1.fw.png" alt="" class="img-contact-topics">
+              <img src="./assets/contact/icon1.fw.png" alt="" class="img-contact-topics">
               <div class="contact-topics-content">
                 <h4>Office Adress</h4>
                 <p>99th, Arround St. Pku City, 28292, Riau Indonesia</p>
               </div>
             </div>
             <div class="contact-topics">
-              <img src="assets/contact/icon2.fw.png" alt="" class="img-contact-topics">
+              <img src="./assets/contact/icon2.fw.png" alt="" class="img-contact-topics">
               <div>
                 <h4>Call Us</h4>
                 <p>+(555) 5555-555</p>
               </div>
             </div>
             <div class="contact-topics">
-              <img src="assets/contact/icon3.fw.png" alt="" class="img-contact-topics">
+              <img src="./assets/contact/icon3.fw.png" alt="" class="img-contact-topics">
               <div>
                 <h4>Mail Us</h4>
                 <p>user@user.com</p>
@@ -229,7 +226,7 @@
    </section>
    <section class="footer-content">
     <div class="footer-logo">
-      <img src="/assets/logo.fw.png" alt="Logo - Criativo" class="img-logo-footer">
+      <img src="./assets/logo.fw.png" alt="Logo - Criativo" class="img-logo-footer">
     </div>
     <div class="footer-menu">
       <a href="./index.html"><p class="link-menu">Home</p></a>
@@ -243,7 +240,7 @@
       <a href="https://www.instagram.com/mauriciofilho93/"><img src="./assets//social-media-icons/instagram.fw.png" alt="Instagram"></a>
       <a href="https://www.facebook.com/profile.php?id=100015329647571"><img src="./assets//social-media-icons/facebook.fw.png" alt="Facebook"></a>
     </div>
-    <p class="about-text">Developed by Mauricio Filho | Inspired by Creative Agency All Right Reserved By Rometheme. Copyright © </p>
+    <p class="about-text footer-text">Developed by Mauricio Filho | Inspired by Creative Agency All Right Reserved By Rometheme. Copyright © </p>
   </section>      
 </body>
 </html>
