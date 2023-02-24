@@ -636,7 +636,7 @@ gap: 20px;
   }
 
   .email-container {
-    max-width: 550px;
+    max-width: 550px;    
   }
 
   .input-contact {
@@ -694,7 +694,7 @@ gap: 20px;
   }
 
   .creative-container {
-    padding: 40px 20px 0px 20px;
+    padding: 40px 10px 40px 10px ;
     
   }
 
@@ -711,12 +711,25 @@ gap: 20px;
     
   }
 
+  .cases {
+    margin-bottom: 30px;
+  }
+
   .creative-text h1 {
     font-size: 40px;
   }
 
   .parallax-content {
     align-items: center;
+  }
+
+  .contact-us{
+    display: none;
+  
+  }
+
+  .email-container {    
+    margin-right: 0;
   }
 
   .contact-text {
@@ -727,9 +740,8 @@ gap: 20px;
   .contact-container {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: center;
-    background-image: url(./assets/contact_bg.fw.png);    
-    background-size:450%;
+    justify-content: center;        
+    background-size:0%;
     height: 800px; 
     padding: 40px;
      
@@ -745,8 +757,26 @@ gap: 20px;
  
 }
 
+@media screen and (max-width: 779px) {
+
+  .parallax-bg {     
+    display: none;   
+  }
+
+  .parallax {
+    background-color:rgb(20, 20, 20)
+  }
+
+  
+
 
 @media screen and (max-width: 605px) {
+
+  .header-menu {
+    gap: 20px;
+    font-size: 20px;
+  }
+
   .img-right-girl {
     display: none;
   }
@@ -771,14 +801,27 @@ gap: 20px;
     align-self: center;
   }
 
-  .parallax-bg {    
-    height: 800px; /* Altura igual à seção */       
-    top: -1300px; /* Alinhar a imagem de fundo ao topo */
-    
+  .parallax {
+    background-color:rgb(20, 20, 20);
+    height: auto;
+  }
+
+  .parallax-content {
+    height: auto;
+    justify-content: center;
+  }
+
+  .parallax-bg {      
+    display: none;    
   }
 
   .cases-container {
     padding: 20px;
+    
+  }
+
+  .cases {
+    margin-bottom: 30px;
   }
 
   #portfolio {
@@ -792,7 +835,15 @@ gap: 20px;
 
   .email-container {
     margin-right: 0;
-    
+    width: 100%;    
+  }
+
+  .form, .send {
+    width: 100%;
+  }
+
+  .input-contact, .textarea {
+    width: 100%;
   }
 
   .img-logo-footer {
@@ -800,9 +851,100 @@ gap: 20px;
     height: auto;
   }
 
-  .footer-menu {
+  .footer-menu {    
+    padding: 10px 0px 10px 0px;
+    gap: 5px;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-menu  {
+    padding: 10px 0px 10px 0px;
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .creative-container {
+    padding: 40px 10px 40px 10px ;
+  }
+
+  .creative-text {
+    height: auto;
+  }
+
+  .cases {
+    height: auto;
+  }
+
+  .cases-container {
+    height: auto;
+  }
+
+  .parallax {
+    width: 100%;
+  }
+
+  .parallax-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+@media screen and (max-width: 412px) {
+  .header-content {
+    padding: 5px;   
+  }
+
+  .header-menu {
+    font-size: 16px;
+  }
+
+  .creative-container {
+    gap: 0px;
+  }
+
+  .creative-text {
+    justify-content: center;
+    height: auto;
+  }
+
+  .tiles-icon {
+    display: none;
+  }
+  
+  .cases-container {   
+    padding-top: 100px;
+  }
+
+  #portfolio {
+    height: auto;
+  } 
+
+  .email-container {
+    height: auto;
+    padding: 10px;
+  }
+
+  .footer-content {
+    height: auto;
     padding: 5px;
-    gap: 20px;
+  }
+
+  .footer-menu {
+    gap: 5px;
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .cases {
+    height: auto;
+    margin-bottom: 100px;
   }
 }
 
